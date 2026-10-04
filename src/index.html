@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Прямой источник — официальные сайты программ</title>
+  <meta name="description" content="Русскоязычный каталог полезных программ: официальные сайты и репозитории, платформы и пояснения перед установкой.">
+  <meta name="theme-color" content="#1649e8">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#catalog">Перейти к каталогу</a>
+<header class="header"><div class="header-inner">
+  <a class="brand" href="./" aria-label="Прямой источник — главная"><span class="brand-mark" aria-hidden="true">и.</span><span>прямой<span class="brand-second">источник</span></span></a>
+  <nav aria-label="Главная навигация"><a href="#catalog" class="nav-current">Каталог</a><a href="#principles">Как выбираем</a><a href="https://github.com/karaskiras/direct-source" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (новая вкладка)</span></a></nav>
+</div></header>
+<main class="layout">
+  <aside class="sidebar"><div class="sidebar-content"><p class="eyebrow">НАВИГАЦИЯ</p><nav class="category-nav" aria-label="Категории программ"><a href="#catalog" data-category-filter="all" aria-current="true">Все программы <span>{{COUNT}}</span></a>{{CATEGORIES}}</nav><div class="sidebar-note"><span class="small-mark" aria-hidden="true">и.</span><p>Короткий путь<br>к разработчику.</p><small>Без рекламы и перепакованных установщиков.</small></div></div></aside>
+  <div class="main-content">
+    <section class="intro" aria-labelledby="title"><p class="eyebrow">ПРОГРАММЫ И ИХ ПЕРВОИСТОЧНИКИ</p><h1 id="title">Нужная программа.<br><span>Официальная ссылка.</span></h1><p class="intro-text">Собрали полезные программы в одном месте.<br class="desktop-break"> Выбирайте инструмент — переходите прямо к разработчику.</p><div class="intro-meta"><span>{{COUNT}} программ</span><span>6 категорий</span><a href="#principles">Прозрачные источники</a></div></section>
+    <section id="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-heading"><h2 id="catalog-title">Каталог</h2><span id="result-count" role="status" aria-live="polite">{{COUNT}} программ</span></div>
+      <div class="filters" hidden><label class="search-label" for="search"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">Поиск программ</span><input id="search" type="search" placeholder="Название или задача, например: запись экрана" autocomplete="off"></label><label class="platform-select"><span class="sr-only">Платформа</span><select id="platform"><option value="all">Все платформы</option><option>Windows</option><option>macOS</option><option>Linux</option><option>Android</option><option>iOS</option></select></label></div>
+      <p class="catalog-hint">Открываем страницу проекта. Файлы скачиваются у разработчика.</p>
+      <div class="program-grid">{{CARDS}}</div>
+      <div class="empty" id="empty" hidden><h3>Ничего не найдено</h3><p>Попробуйте другое название или уберите фильтры.</p><button id="reset" type="button">Сбросить фильтры</button></div>
+      <noscript><p class="noscript">Все ссылки доступны без JavaScript. Для поиска используйте поиск по странице в браузере.</p></noscript>
+    </section>
+    <section class="principles" id="principles" aria-labelledby="principles-title"><div><p class="eyebrow">О КАТАЛОГЕ</p><h2 id="principles-title">Доверие начинается<br>с понятного источника.</h2></div><div class="principle-list"><div><span>01</span><div><h3>Ссылка ведёт к автору</h3><p>Указываем сайт проекта или репозиторий разработчика. У сборок и форков отдельно называем автора и исходный проект.</p></div></div><div><span>02</span><div><h3>Проверка открыта</h3><p>В каждой карточке есть дата и страница-основание. Это проверка источника, а не аудит программы или гарантия безопасности файла.</p></div></div><div><span>03</span><div><h3>Каталог можно исправить</h3><p>Нашли неверную ссылку или полезную программу? <a href="https://github.com/karaskiras/direct-source/issues/new" target="_blank" rel="noopener noreferrer">Создайте предложение на GitHub<span class="sr-only"> (новая вкладка)</span></a>. Понадобится учётная запись.</p></div></div></div></section>
+    <footer><span>Прямой источник · 2026</span><p>Доступность сайтов зависит от региона и провайдера.<br>Названия программ принадлежат их правообладателям.</p></footer>
+  </div>
+</main>
+</body></html>
